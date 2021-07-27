@@ -19,7 +19,7 @@ func createAccounts() {
 
 		db.Create(&user)
 
-		account := &interfaces.Account{Type: "Daily Account", Name: string(users[i].Username + "'s" + " account"), Balance: uint(1000 * int(i+1)), UserId: user.ID}
+		account := &interfaces.Account{Type: "Daily Account", Name: string(users[i].Username + "'s" + " account"), Balance: uint(1000 * int(i+1)), UserID: user.ID}
 		db.Create(&account)
 	}
 

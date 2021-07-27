@@ -14,7 +14,7 @@ type Account struct {
 	Type    string
 	Name    string
 	Balance uint
-	UserId  uint
+	UserID  uint
 }
 
 type ResponseAccount struct {
@@ -29,4 +29,9 @@ type ResponseUser struct {
 	Email    string
 	Password string
 	Accounts []ResponseAccount
+}
+
+type Validation struct {
+	Value string
+	Valid string
 }
